@@ -28,7 +28,7 @@ h2 {
     font-family:'DM Sans Medium';
     color: #ff8f89;
     font-size: 30px;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
     margin-top: 50px;
 
     background: -webkit-linear-gradient( #ff8f89, #ff6896 );
@@ -65,7 +65,9 @@ li {
     font-family: 'DM Sans Light';
     color: white;
     list-style-type: none;
-    margin: 20px;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-bottom: 15px;
     padding: 15px;
     overflow: hidden;
     background-color: rgba(255, 255, 255, 0.06);
@@ -84,7 +86,6 @@ ul {
     color: white;
     text-align: center;
     list-style: inside;
-    margin: 30px;
 }
 
 button {
@@ -97,7 +98,6 @@ button {
 
     margin: 0 auto;
     margin-bottom: 20px;
-    margin-left: 20px;
 
     display: flexbox;
     border-radius: 10px;
@@ -108,11 +108,9 @@ button {
 }
 
 button:hover {
-
-
     box-shadow: 0px 0px 40px 0px rgb(255, 104, 150, 0.5);
     background-color: #ff6896;
-    font-size: 90%;
+    font-size: 98%;
 }
 
 a {
@@ -121,11 +119,10 @@ a {
     font-size: 14px;
     transition-duration: 0.5s;
     color: #29366e;
-    margin: 0px 10px 0px 24px ;
+    margin: 0px 0px 0px 24px ;
 }
 
 a:hover {
-    font-size: 85%;
     text-decoration: none;
 }
 
@@ -164,7 +161,7 @@ img {
 
     .text {
     padding-top: 140px;
-    padding-bottom: 40px;
+    padding-bottom: 80px;
     padding-left: 100px;
     padding-right: 100px;
 }
@@ -183,7 +180,23 @@ img {
  
 @keyframes floating {
     0% { transform: translate(0,  0px); }
-    50%  { transform: translate(0, 15px); }
+    50%  { transform: translate(0, 10px); }
+    100%   { transform: translate(0, -0px); }   
+}
+
+.floating-button { 
+    flex-basis: 100%;
+    order: 2;
+
+    animation-name: floating;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+ 
+@keyframes floating-button {
+    0% { transform: translate(0,  0px); }
+    50%  { transform: translate(0, 2px); }
     100%   { transform: translate(0, -0px); }   
 }
 
