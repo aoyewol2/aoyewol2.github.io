@@ -1,9 +1,7 @@
 body {
-
+    background-color: #070913;
     opacity: 1;
-    background-image:  linear-gradient(#090b29 1px, transparent 1px), linear-gradient(to right, #090b29 1px, #070913 1px);
-    background-size: 20px 20px;
-
+    background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #070913 50px ), repeating-linear-gradient( #0c0c1b, #070711 );
 }
 
 h1 {
@@ -21,9 +19,10 @@ h1 {
   -webkit-text-fill-color: transparent;
 }
 
-h1:hover{
+h1:hover {
     font-size: 48px;
 }
+
 h2 {
     text-align: center;
     font-family:'DM Sans Medium';
@@ -39,16 +38,9 @@ h2 {
 
 h3 {
     text-align: center;
-    font-family:'JetBrains Mono Regular';
-    color: rgb(15, 236, 236, 0.09);
+    font-family:'DM Sans';
+    color: rgba(185, 185, 185, 0.09);
     transition-duration: 0.5s;
-}
-
-h4 {
-    text-align: center;
-    font-family:'JetBrains Mono Regular';
-    color: rgba(15, 236, 236, 0.09);
-    padding-top: 650px;
 }
 
 p {
@@ -57,6 +49,16 @@ p {
     color: white;
     font-size: 18px;
     line-height: 2;
+}
+
+span {
+    font-family: 'DM Sans Light';
+    color: rgb(255, 255, 255, 0.5);
+    font-size: 14px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    display: block;
 }
 
 li {
@@ -72,6 +74,7 @@ li {
 }
 
 li:hover {
+    box-shadow: 0px 0px 30px 0px rgb(68, 63, 213, 0.7);
     background-color: #433dd5;
     font-size: 90%;
 }
@@ -81,7 +84,7 @@ ul {
     color: white;
     text-align: center;
     list-style: inside;
-    margin: 50px;
+    margin: 30px;
 }
 
 button {
@@ -105,6 +108,9 @@ button {
 }
 
 button:hover {
+
+
+    box-shadow: 0px 0px 40px 0px rgb(255, 104, 150, 0.5);
     background-color: #ff6896;
     font-size: 90%;
 }
@@ -156,29 +162,29 @@ img {
     justify-content: center;
     }
 
-    .image {
-    flex-basis: 100%;
-    order: 2;
-}
-.text {
+    .text {
     padding-top: 140px;
     padding-bottom: 40px;
     padding-left: 100px;
     padding-right: 100px;
 }
 
-.box {
-    position: absolute;
-    display: inline-flex;
-}
+.floating { 
+    flex-basis: 100%;
+    order: 2;
 
-.box .text {
-    position: absolute;
-    z-index: 999;
-    left: 0;
-    right: 0;
-    top: 0%;
-    bottom: -40%;
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    margin-left: 30px;
+    margin-top: 5px;
+}
+ 
+@keyframes floating {
+    0% { transform: translate(0,  0px); }
+    50%  { transform: translate(0, 15px); }
+    100%   { transform: translate(0, -0px); }   
 }
 
 /* imported */
@@ -188,7 +194,7 @@ img {
     position: relative;
   }
   
-  .hover-underline-animation:after {
+.hover-underline-animation:after {
     content: '';
     position: absolute;
     width: 100%;
@@ -199,12 +205,12 @@ img {
     background-color: #29366e;
     transform-origin: bottom right;
     transition: transform 0.5s ease-out;
-  }
-  
-  .hover-underline-animation:hover:after {
+}
+
+.hover-underline-animation:hover:after {
     transform: scaleX(1);
     transform-origin: bottom left;
-  }
+}
 
   
 
