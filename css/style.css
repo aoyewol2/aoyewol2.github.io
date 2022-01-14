@@ -8,7 +8,7 @@ h1 {
     text-align: left;
     font-family:'DM Sans Medium';
     font-weight: bold;
-    font-size: 46px;
+    font-size: 50px;
     color: #ff8f89;
     margin-bottom: -10px;
     padding-left: 20px;
@@ -17,10 +17,6 @@ h1 {
     background: -webkit-linear-gradient( #ff8f89, #ff6896 );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-}
-
-h1:hover {
-    font-size: 48px;
 }
 
 h2 {
@@ -51,7 +47,7 @@ p {
     line-height: 2;
 }
 
-span {
+h4 {
     font-family: 'DM Sans Light';
     color: rgb(255, 255, 255, 0.5);
     font-size: 14px;
@@ -160,7 +156,7 @@ img {
     }
 
     .text {
-    padding-top: 140px;
+    padding-top: 80px;
     padding-bottom: 80px;
     padding-left: 100px;
     padding-right: 100px;
@@ -200,7 +196,7 @@ img {
     100%   { transform: translate(0, -0px); }   
 }
 
-/* imported */
+/* underline hover */
 
 .hover-underline-animation {
     display: inline-block;
@@ -225,6 +221,26 @@ img {
     transform-origin: bottom left;
 }
 
-  
+/* wave animation */
 
+.wave {
+    animation-name: wave-animation;  /* Refers to the name of your @keyframes element below */
+    animation-duration: 2s;        /* Change to speed up or slow down */
+    animation-iteration-count: 1;  /* Never stop waving :) */
+    transform-origin: 70% 70%;       /* Pivot around the bottom-left palm */
+    display: inline-block;
+  }
+  
+  @keyframes wave-animation {
+      0% { transform: rotate( 0.0deg) }
+     10% { transform: rotate(14.0deg) }  /* The following five values can be played with to make the waving more or less extreme */
+     20% { transform: rotate(-8.0deg) }
+     30% { transform: rotate(14.0deg) }
+     40% { transform: rotate(-4.0deg) }
+     50% { transform: rotate(10.0deg) }
+     60% { transform: rotate( 0.0deg) }  /* Reset for the last half to pause */
+    100% { transform: rotate( 0.0deg) }
+  }
+  
+  span { font-size: 3.5em }
   
