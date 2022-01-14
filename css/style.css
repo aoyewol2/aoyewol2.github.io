@@ -108,7 +108,7 @@ button {
 }
 
 button:hover {
-    box-shadow: 0px 0px 40px 0px rgb(255, 104, 150, 0.5);
+    box-shadow: 0px 0px 30px 0px rgb(255, 104, 150, 0.5);
     background-color: #ff6896;
     font-size: 98%;
 }
