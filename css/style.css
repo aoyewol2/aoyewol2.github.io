@@ -6,7 +6,7 @@ body {
 
 h1 {
     text-align: left;
-    font-family:'DM Sans Medium';
+    font-family:'DM Sans Medium',sans-serif;
     font-weight: bold;
     font-size: 50px;
     color: #ff8f89;
@@ -21,7 +21,7 @@ h1 {
 
 h2 {
     text-align: center;
-    font-family:'DM Sans Medium';
+    font-family:'DM Sans Medium',sans-serif;
     color: #ff8f89;
     font-size: 30px;
     margin-bottom: 40px;
@@ -34,13 +34,13 @@ h2 {
 
 h3 {
     text-align: center;
-    font-family:'DM Sans';
+    font-family:'DM Sans',sans-serif;
     color: rgba(185, 185, 185, 0.09);
     transition-duration: 0.5s;
 }
 
 p {
-    font-family: 'DM Sans Light';
+    font-family: 'DM Sans Light',sans-serif;
     padding: 20px 20px 20px 20px;
     color: white;
     font-size: 18px;
@@ -48,7 +48,7 @@ p {
 }
 
 h4 {
-    font-family: 'DM Sans Light';
+    font-family: 'DM Sans Light',sans-serif;
     color: rgb(255, 255, 255, 0.5);
     font-size: 14px;
     padding-top: 20px;
@@ -58,7 +58,7 @@ h4 {
 }
 
 li {
-    font-family: 'DM Sans Light';
+    font-family: 'DM Sans Light',sans-serif;
     color: white;
     list-style-type: none;
     margin-left: 15px;
@@ -78,7 +78,7 @@ li:hover {
 }
 
 ul {
-    font-family: 'DM Sans Light';
+    font-family: 'DM Sans Light',sans-serif;
     color: white;
     text-align: center;
     list-style: inside;
@@ -97,7 +97,7 @@ button {
 
     display: flexbox;
     border-radius: 10px;
-    font-family: DM Sans Medium;
+    font-family: "DM Sans Medium",sans-serif;
     font-size: 16px;
     text-shadow: 4px 4px 10px #fc4a40;
     transition-duration: 0.7s;
