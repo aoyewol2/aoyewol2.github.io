@@ -14,13 +14,24 @@
     </style>
 </head>
 <body>
+    <!-- Initials -->
+    <div class="container-2">
+        <img src="assets/fixed-logo.png" 
+            alt="" 
+            srcset=""
+            class= "non-clickable"
+            style="width:150px; height:auto;">
+    </div>
+
     <!-- Intro -->
     <div class="container">
         <div class="floating">
-            <img src="assets/bitmoji-2.PNG" alt="That's me!">
+            <img
+                src="assets/bitmoji-2.PNG"
+                alt="">
         </div>
 
-        <div class = "text">
+        <div class="text" id="about">
             <span class="wave">👋</span>
             <h1>Hi! I'm Ashley, an aspiring web and software developer.</h1>
 
@@ -29,9 +40,13 @@
             I'm most interested in <b class="hover-underline-animation">web dev</b>, <b class="hover-underline-animation">game development</b> and <b class="hover-underline-animation">product design</b>.
             
             A few of my hobbies outside of coding are video editing, graphic design and occassionally gaming!</p>
-        <a href="https://drive.google.com/file/d/1NLX2MS9RNdxha3PF4sPpxE1qnlP4pZ69/view" target="_blank" rel="noopener noreferrer">
-            <button class="floating-button">View my resume</button>
-        </a>
+            <a href="https://drive.google.com/file/d/1NLX2MS9RNdxha3PF4sPpxE1qnlP4pZ69/view" target="_blank" rel="noopener noreferrer">
+                <button class="floating-button"
+                    style="cursor: pointer;">
+                        View my resume
+                </button>
+            </a>
+
             <a class="hover-underline-animation"
             href="https://www.linkedin.com/in/ashleyoyewole/"target="_blank" rel="noopener noreferrer" class="text-center">LinkedIn</a>
 
@@ -50,45 +65,162 @@
     </div>
 
     <!-- Skills section -->
-    <div>
-        <h2>My Skills</h2>
-        <ul>
-            <li class="hover-underline-animation" style="display:inline-flex">✨ UI design</li>
-            <li class="hover-underline-animation" style="display:inline-flex">🎮 Game asset design</li>
-            <li class="hover-underline-animation" style="display:inline-flex">⚙️ Frontend development</li>
-            <li class="hover-underline-animation" style="display:inline-flex">🌐 Database design</li>
+    <div id="skills">
+        <h2 style="margin-top: 120px;">My Skills</h2>
+        <ul style="margin-top: -20px;">
+            <li class="skills hover-underline-animation" style="display:inline-flex">✨ UI design</li>
+            <li class="skills hover-underline-animation" style="display:inline-flex">🎮 Game asset design</li>
+            <li class="skills hover-underline-animation" style="display:inline-flex">⚙️ Frontend development</li>
+            <li class="skills hover-underline-animation" style="display:inline-flex">🌐 Database design</li>
         </ul>
 
-        <ul class="text-center">
-            <li class="hover-underline-animation" style="display:inline-flex">Python</li>
-            <li class="hover-underline-animation" style="display:inline-flex">HTML/CSS</li>
-            <li class="hover-underline-animation" style="display:inline-flex">SQL, XML</li>
+        <ul>
+            <li class="skills hover-underline-animation" style="display:inline-flex">Python</li>
+            <li class="skills hover-underline-animation" style="display:inline-flex">HTML/CSS</li>
+            <li class="skills hover-underline-animation" style="display:inline-flex">SQL, XML</li>
         </ul>
 
         <div>
             <h2>Tools & Programs</h2>
-            <ul class="text-center">
-                <li class="hover-underline-animation" style="display:inline-flex">Adobe After Effects</li>
+            <ul class="text-center" style="margin-top: -20px;">
+                <li class="skills hover-underline-animation" style="display:inline-flex">Adobe After Effects</li>
 
-                <li class="hover-underline-animation" style="display:inline-flex">Adobe Photoshop</li>
+                <li class="skills hover-underline-animation" style="display:inline-flex">Adobe Photoshop</li>
 
-                <li class="hover-underline-animation" style="display:inline-flex">Figma, Adobe XD</li>
+                <li class="skills hover-underline-animation" style="display:inline-flex">Figma, Adobe XD</li>
 
-                <li class="hover-underline-animation" style="display:inline-flex">Git, Github</li>
+                <li class="skills hover-underline-animation" style="display:inline-flex">Git, Github</li>
 
-                <li class="hover-underline-animation" style="display:inline-flex">Visual Studio Code</li>
+                <li class="skills hover-underline-animation" style="display:inline-flex">Visual Studio Code</li>
             </ul> 
         </div>
+    </div>
 
     <div>   
         <h2>Currently Learning</h2>
-        <ul>
-            <li class="hover-underline-animation" style="display:left">🎲 Game development</li>
-            <li class="hover-underline-animation" style="display:left">✍️ JavaScript</li>
-            <li class="hover-underline-animation" style="display:left">🖥️ CSS frameworks</li>
+        <ul style="margin-top: -20px;">
+            <li class="skills hover-underline-animation" style="display:left">🎲 Game development</li>
+            <li class="skills hover-underline-animation" style="display:left">✍️ JavaScript</li>
+            <li class="skills hover-underline-animation" style="display:left">🖥️ CSS frameworks</li>
         </ul>
+    </div>
+
+    <!-- Projects -->
+    <div id="projects">
+        <h2 style="margin-top:100px;
+        margin-bottom:-50px;">
+            Projects</h2>
+    </div>
+    <!-- Intelliview -->
+    <div class = "container">
+        <img class= "rounded-borders non-clickable" src="assets/img/SH6.png" alt="SheHacks+ 6" style="margin-left: 100px;">
+
+        <div class = "text">
+            <h2 style="text-align: left; margin-left: 20px;">Intelliview</h2>
+            <p style="margin-top:-60px; margin-bottom:-5px;">🏆 Second Place Overall, Best Use of Google Cloud</p>
+
+            <li class="tags "style="display:inline-flex">Hackathon</li>
+            <li class="tags" style="display:inline-flex">Technical</li>
+
+            <p style="margin-top:-1px;">
+                
+                Intelliview is a platform that stores job applications, past interviews, and advice for students to prepare for future interviews at their dream company. SheHacks+ 6 was my first hackathon, so I had to learn new skills along the way. The hackathon exposed me to front-end development, as my role on the team was to design a webpage using HTML and CSS.
+                
+                <h5>SheHacks+ 6, Jan 2022
+                    <a href="https://devpost.com/software/intelliview" 
+                        target="_blank" 
+                        rel="noopener noreferrer">
+                    <img class= "icon non-clickable" src="/assets/ico/new-tab.png" alt="">
+                    </a>
+                </h5>
+            </p>    
+        </div>
+    </div>
+
+    <!-- LUXE Banking App -->
+    <div class = "container">
+        <img class= "rounded-borders non-clickable"
+            src="assets/img/1.png"
+            alt="Luxe Banking App"
+            style="margin-left: 100px;">
+
+        <div class = "text"">
+            <h2 style="text-align: left; margin-left: 20px;">Luxe Banking App</h2>
+            <p style="margin-top:-60px; margin-bottom:-5px;">Application Prototype</p>
+
+            <li class="tags "style="display:inline-flex">UI/UX Project</li>
+            <li class="tags" style="display:inline-flex">Design</li>
+            <li class="tags" style="display:inline-flex">Figma</li>
+
+            <p style="margin-top:-1px;">
+                
+                A prototype of a banking app using Figma and Photoshop tools. I chose to work on this project because as a user, I feel like banking mobile apps have an outdated interface. Their UIs should be redesigned as an easier to navigate and switch between accounts interface.
+            
+                <h5>June 2021<a href="https://www.behance.net/gallery/121007171/LUXE-Banking-app-design"
+                    target="_blank"
+                    rel="noopener noreferrer">
+                <img class= "icon non-clickable" 
+                    src="/assets/ico/new-tab.png"
+                    alt="">
+                </a>
+                </h5>
+            
+            </p>
+        </div>
+    </div>
+
+    <!-- Web App Prototype -->
+    <div class = "container" style="margin-top:30px;">
+        <img class= "rounded-borders non-clickable" src="assets/img/4.png" alt="Web App Prototype" style="margin-left: 100px;">
+
+        <div class = "text">
+            <h2 style="text-align: left; margin-left: 20px;">Web App Prototype</h2>
+            <p style="margin-top:-60px; margin-bottom:-5px;">Application Prototype</p>
+
+            <li class="tags "style="display:inline-flex">UI/UX Project</li>
+            <li class="tags" style="display:inline-flex">Design</li>
+            <li class="tags" style="display:inline-flex">Adobe XD</li>
+
+            <p style="margin-top:-1px;">A responsive landing page prototype designed using Adobe XD. My inspiration for the colour theme was modern dark mode on websites and applications with vibrant colours for icons to create contrast.
+            
+                <h5>May 2021<a href="https://www.behance.net/gallery/119911869/Responsive-Landing-Page" target="_blank" rel="noopener noreferrer" ><img class= "icon non-clickable" src="/assets/ico/new-tab.png" alt=""></a></h5>
+            
+            </p>
+        </div>
+    </div>
+
+    <div>
+        <a class="link-2"
+            href="https://github.com/aoyewol2" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            style="text-align: center; font-size: 18px; margin-top: 50px; display:block;">
+            ↻ View my projects on Github</a>
+    </div>
+    <!-- Contact -->
+
+    <div style="margin: 70px">
+        <img class="contact non-clickable" src="assets/img/profile.jfif" alt="" style="height: 300px; float:left;">
+        <div class = "text">
+            <h2 style="text-align: left; margin-left: 20px">Contact</h2>
+            <p style="margin-top:-60px;
+                margin-bottom:-5px;
+                font-weight:bold;">
+                    Ashley Oyewole
+            </p>
+            
+            <p style="margin-top: -30px;">I'd love to chat! Feel free to contact me at aoyewol2@uwo.ca or on LinkedIn.</p>
+            <div style="margin-top: -30px">
+                <a style="margin-left: 0px; font-size: 110%;" class="hover-underline-animation"
+                href="https://www.linkedin.com/in/ashleyoyewole/"target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                <a style="font-size: 110%;" class="hover-underline-animation"
+                href="mailto:aoyewol2@uwo.ca" target="_blank" rel="noopener noreferrer">Email</a>
+            </div> 
+    </div>
+
     <!-- Footer -->
-        <h4> &lt;/&gt; and 🎨 by Ashley Oyewole</h4>
+    <div>
+        <h4 style="margin-top:120px; margin-bottom: -50px; "> &lt;/&gt; and 🎨 by Ashley Oyewole</h4>
     </div>   
 
 </body>
