@@ -409,3 +409,39 @@ img.wave {
      60% { transform: rotate( 0.0deg) }  /* Reset for the last half to pause */
     100% { transform: rotate( 0.0deg) }
   }
+
+.notification p {
+    font-size: 16px;
+    color: rgb(0, 0, 0);
+}
+
+.notification a  {
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+}
+
+.notification a:hover  {
+    text-decoration: underline;
+}
+
+.notification a, p {
+    margin-top: -15px;
+}
+
+.notification i {
+    color:#003566;
+    transform: translateY(2px);
+}
+
+.notification {
+    background-color: #e2e2e2;
+    width: 100%;
+    height: 45px;
+    text-align: center;
+    position: fixed;
+    z-index: 5;
+    top: 0;
+    left:0;
+    right: 0;
+}
